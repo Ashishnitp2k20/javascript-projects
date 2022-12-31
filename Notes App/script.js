@@ -1,6 +1,6 @@
 showNotes();
 
-// If user adds a note then save it to the localStorage
+// If user adds a notethen it should be save to the localStorage
 let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
@@ -17,7 +17,7 @@ addBtn.addEventListener("click", function(e) {
 });
 
 // Function to show elements from localStorage
-const showNotes = () =>{
+function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
